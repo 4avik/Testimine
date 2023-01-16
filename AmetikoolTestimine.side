@@ -1,0 +1,584 @@
+{
+  "id": "302f62b5-8c61-4614-88ef-c86a9240548d",
+  "version": "2.0",
+  "name": "AmetikoolTestimine",
+  "url": "https://www.ametikool.ee",
+  "tests": [{
+    "id": "f993854d-5b0f-4c96-8129-f066db31907b",
+    "name": "Ametikool",
+    "commands": []
+  }, {
+    "id": "9ad7878c-2193-4f69-9b85-213d98a4c05d",
+    "name": "AmetikooliHomepage",
+    "commands": [{
+      "id": "e23bafd6-2da8-4910-997d-765b65d8e11f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5df9c5d-cd00-489c-bfd1-da4995b53cd2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1106x762",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab318e3c-057c-4ae4-97dc-e2c38a4373e4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,202.39999389648438)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe3ec6a9-61a5-4f1a-b88b-160a114ad002",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bullet-links-wrapper",
+      "targets": [
+        ["css=.bullet-links-wrapper", "css:finder"],
+        ["xpath=//div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c25896b-1ff0-4efb-82f9-1d7a2f9ad4cc",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.hero > .inline > .row",
+      "targets": [
+        ["css=.hero > .inline > .row", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c82cfdc6-bc4d-47ec-9295-fdb8e786bfcf",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.col-12 > .swiper-holder > .swiper-container",
+      "targets": [
+        ["css=.col-12 > .swiper-holder > .swiper-container", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03da426d-dd2d-4d64-9bd8-4fc0710836d6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-12 > .swiper-holder > .swiper-container",
+      "targets": [
+        ["css=.col-12 > .swiper-holder > .swiper-container", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Äri ja majandusarvestus\\nVaata erialasid\\nTarkvaraarendaja\\nVaata erialasid\\nVäikelaevaehitus\\nVaata erialasid\\nToitlustus ja majutus\\nVaata erialasid"
+    }, {
+      "id": "8352a360-29e3-49ee-866a-9cd44eb618d9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "318d4263-45bb-4721-a1c2-dc2e4a09756e",
+    "name": "otsiTestimine",
+    "commands": [{
+      "id": "d11eb8fb-de94-480b-bfb6-751e8c382347",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b11fc61-0720-4b85-8cdc-d3cab7a45cfe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1106x762",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1130fee-1bfd-42dd-8aa5-9fa7e21f06cb",
+      "comment": "",
+      "command": "click",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.header-search > input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "838c0173-fecf-4e18-9c85-c498f4afdb7e",
+      "comment": "",
+      "command": "type",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.header-search > input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Testimine"
+    }, {
+      "id": "2b521c42-5782-496d-9f74-63ddf320dd31",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.header-search > input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6bcce867-bcd1-4728-afaa-a2c42750c20d",
+      "comment": "",
+      "command": "click",
+      "target": "css=i:nth-child(1)",
+      "targets": [
+        ["css=i:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='all']/h2/span/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,'\"Testimine\"')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8a844b4-22bf-455e-8cfe-296b7b4f1929",
+      "comment": "",
+      "command": "click",
+      "target": "css=i:nth-child(1)",
+      "targets": [
+        ["css=i:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='all']/h2/span/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,'\"Testimine\"')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe8cd972-4cc6-4c8e-a0ac-9eee7a6ceb72",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=i:nth-child(1)",
+      "targets": [
+        ["css=i:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='all']/h2/span/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,'\"Testimine\"')]", "xpath:innerText"]
+      ],
+      "value": "\"Testimine\""
+    }, {
+      "id": "8ef2cc29-40ea-4719-81e1-a7f041645aae",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,197.60000610351562)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a616a82-7081-4afd-911a-b718b34c856a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4) > .col-12:nth-child(1)",
+      "targets": [
+        ["css=.row:nth-child(4) > .col-12:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='all']/div[2]/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "deef7dd1-f998-45fc-9c5d-2debaae11e88",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-12:nth-child(1) > .object .object-title",
+      "targets": [
+        ["css=.col-12:nth-child(1) > .object .object-title", "css:finder"],
+        ["xpath=//div[@id='all']/div[2]/div[3]/div/a/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span", "xpath:position"]
+      ],
+      "value": "Uus aasta algab testimisega"
+    }, {
+      "id": "b3ab760e-8dff-40ec-913b-459fe61bd51f",
+      "comment": "",
+      "command": "click",
+      "target": "id=all",
+      "targets": [
+        ["id=all", "id"],
+        ["css=#all", "css:finder"],
+        ["xpath=//div[@id='all']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9c1a2d6-6787-478d-8b4f-c6e2b547e391",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Otsi | Kuressaare Ametikool",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4588b0e8-33ef-4105-aa3d-6adbfb7c8726",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-12:nth-child(1) > .object .object-title",
+      "targets": [
+        ["css=.col-12:nth-child(1) > .object .object-title", "css:finder"],
+        ["xpath=//div[@id='all']/div[2]/div[3]/div/a/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "437e3faf-bf3f-40ad-9310-b0ba54588117",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cbac5d44-1513-4b92-add7-f5cb59921c86",
+    "name": "First-pagetest",
+    "commands": [{
+      "id": "75b1a40c-dc01-436e-ad7a-67a606b08609",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bbbec27-44a2-48ec-b7b3-3ed92e8e026a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1106x762",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a957d5ed-7f64-45f8-8812-8cf4fa8469a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-nav_main > li:nth-child(2) > .active",
+      "targets": [
+        ["css=.header-nav_main > li:nth-child(2) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Sisseastumine')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/et')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5be20d39-6a02-4dfb-878d-ee45fb1e6d01",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Erialad",
+      "targets": [
+        ["linkText=Erialad", "linkText"],
+        ["css=.dynamic-active:nth-child(2) .col-3:nth-child(1) li:nth-child(1) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Erialad')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/et/erialad')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Erialad')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67453a49-597e-4e55-8ee3-f66e157be5a1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,352.79998779296875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bc313c6-1aa3-432d-8171-5bebf4c87060",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,205.60000610351562)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1f6d9dd-66ab-4ee9-b897-031ba0a09746",
+      "comment": "",
+      "command": "click",
+      "target": "css=.block:nth-child(1) > .row > .col-12",
+      "targets": [
+        ["css=.block:nth-child(1) > .row > .col-12", "css:finder"],
+        ["xpath=//div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1f5b3b1-f400-4bdd-8844-8b2ba18da0dc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-7:nth-child(2)",
+      "targets": [
+        ["css=.col-7:nth-child(2)", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Erialad')]", "xpath:innerText"]
+      ],
+      "value": "Erialad"
+    }, {
+      "id": "6a0ea031-abaa-4bac-8b6c-9dd3a292972a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,208)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49f05192-c684-4098-b7ad-667033690a3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(29)",
+      "targets": [
+        ["css=h2:nth-child(29)", "css:finder"],
+        ["xpath=//div[@id='noorem_tarkvaraarendaja_-_3_a']/div[2]/div[2]/article/h2[5]", "xpath:idRelative"],
+        ["xpath=//h2[5]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Sisseastumise ajakava')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5aa0a87-9c9d-4c9a-b013-898a1bfd6e16",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(29)",
+      "targets": [
+        ["css=h2:nth-child(29)", "css:finder"],
+        ["xpath=//div[@id='noorem_tarkvaraarendaja_-_3_a']/div[2]/div[2]/article/h2[5]", "xpath:idRelative"],
+        ["xpath=//h2[5]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Sisseastumise ajakava')]", "xpath:innerText"]
+      ],
+      "value": "Sisseastumise ajakava"
+    }, {
+      "id": "1c6b3a11-6c2e-4a2b-9490-1b8abfe925a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-nav_main > .active > a",
+      "targets": [
+        ["css=.header-nav_main > .active > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sisseastumine')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/et')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e7d1f03-bd17-480f-a21c-bb254431b972",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Eelseisvad vastuvõtud",
+      "targets": [
+        ["linkText=Eelseisvad vastuvõtud", "linkText"],
+        ["css=.active:nth-child(2) .col-3:nth-child(1) li:nth-child(2) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Eelseisvad vastuvõtud')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/et/sisseastumine')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Eelseisvad vastuvõtud')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16ff770a-1cd8-4bee-b14d-61d66b07bd93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.block",
+      "targets": [
+        ["css=.block", "css:finder"],
+        ["xpath=//div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53d3f16e-e1d6-48c4-82d3-3e72768c0704",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sm-hide > h2:nth-child(1)",
+      "targets": [
+        ["css=.sm-hide > h2:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Talvine sisseastumine')]", "xpath:innerText"]
+      ],
+      "value": "Talvine sisseastumine"
+    }, {
+      "id": "bd5e1a3f-275f-48f3-be06-ef798a9ceb38",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,212.8000030517578)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e566ef04-bbca-4239-8163-3fdace6cf124",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-7:nth-child(1)",
+      "targets": [
+        ["css=.col-7:nth-child(1)", "css:finder"],
+        ["xpath=//article/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d63241b3-b748-4ad0-b3d6-2211399e0d0e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.sm-hide > h2:nth-child(14)",
+      "targets": [
+        ["css=.sm-hide > h2:nth-child(14)", "css:finder"],
+        ["xpath=//h2[2]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Kevadine ja suvine sisseastumine')]", "xpath:innerText"]
+      ],
+      "value": "Kevadine ja suvine sisseastumine"
+    }, {
+      "id": "d789f16b-821b-4929-bff5-b10097d4c3d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-nav_main > .active > a",
+      "targets": [
+        ["css=.header-nav_main > .active > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sisseastumine')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/et')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7bd0247-3a92-4789-b2b1-862c0ca3267b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dokumendid ja vastuvõtu korraldus",
+      "targets": [
+        ["linkText=Dokumendid ja vastuvõtu korraldus", "linkText"],
+        ["css=.active:nth-child(2) .col-3:nth-child(1) li:nth-child(3) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Dokumendid ja vastuvõtu korraldus')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/et/dokumendid-ja-vastuvotu-korraldus')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dokumendid ja vastuvõtu korraldus')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cbdd03c-ce6e-4f28-ac96-bb1aeea1ebbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inline:nth-child(4) > .row > .col-12",
+      "targets": [
+        ["css=.inline:nth-child(4) > .row > .col-12", "css:finder"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88becdf3-eb6f-4cc4-98c9-c8e85537143e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-7:nth-child(2)",
+      "targets": [
+        ["css=.col-7:nth-child(2)", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Dokumendid ja vastuvõtu korraldus')]", "xpath:innerText"]
+      ],
+      "value": "Dokumendid ja vastuvõtu korraldus"
+    }, {
+      "id": "6a531eff-5c80-4eeb-8c65-356107f4406f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearSpace > .row",
+      "targets": [
+        ["css=.clearSpace > .row", "css:finder"],
+        ["xpath=//article/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68d49691-9944-4738-aae6-bce41a3bf45b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,247.1999969482422)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e94aef9-02f4-4b40-a67e-8b1c1e24c077",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active:nth-child(2) > a",
+      "targets": [
+        ["css=.active:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sisseastumine')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/et')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05b59712-a3f6-4f82-9b5b-99b10c32a1c3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Töökohapõhine õpe",
+      "targets": [
+        ["linkText=Töökohapõhine õpe", "linkText"],
+        ["css=.active:nth-child(2) .col-3:nth-child(2) li:nth-child(1) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Töökohapõhine õpe')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/et/tookohapohine-ope')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Töökohapõhine õpe')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ced30d0-37e8-4ab3-a3f2-e30eb87e88b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.block > .row > .col-12",
+      "targets": [
+        ["css=.block > .row > .col-12", "css:finder"],
+        ["xpath=//div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8be4a0f8-992e-4d74-b328-a908ccad5a66",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-7:nth-child(2)",
+      "targets": [
+        ["css=.col-7:nth-child(2)", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Töökohapõhine õpe')]", "xpath:innerText"]
+      ],
+      "value": "Töökohapõhine õpe"
+    }, {
+      "id": "20d31625-0df7-449b-963d-e55aa4648ae5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,223.1999969482422)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1df6b65b-f2b9-4ad6-934e-b60cbe191c49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inline:nth-child(4)",
+      "targets": [
+        ["css=.inline:nth-child(4)", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b91be7d2-9c74-4892-a3b2-b6cf718ab7f4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sm-hide > h2:nth-child(10)",
+      "targets": [
+        ["css=.sm-hide > h2:nth-child(10)", "css:finder"],
+        ["xpath=//h2[3]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Kuidas õppima tulla? ')]", "xpath:innerText"]
+      ],
+      "value": "Kuidas õppima tulla? "
+    }, {
+      "id": "f1559e44-3f44-4a0b-be5f-a29e4ff1fdac",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2eb4c415-60ae-4e0d-948f-70999e749c7f",
+    "name": "test",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "b5065b74-155e-442d-b6f6-3c15f4531f83",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f993854d-5b0f-4c96-8129-f066db31907b"]
+  }],
+  "urls": ["https://www.ametikool.ee/"],
+  "plugins": []
+}
